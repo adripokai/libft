@@ -1,27 +1,27 @@
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int		ft_atoi(const char *str)
 {
-	int	i;
-	int	j;
-	int	atoi;
+	int neg;
+	int i;
+	int num;
 
 	i = 0;
-	j = 1;
-	atoi = 0;
-	while ((str[i] >= 9 && str[i] <= 13) || (str[i] == 32))
+	neg = 1;
+	num = 0;
+	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\v'
+			|| str[i] == '\f' || str[i] == '\r')
 		i++;
-	if (str[i] == '+')
-		i++;
-	else if (str[i] == '-')
+	if (str[i] == '-' || str[i] == '+')
 	{
-		j = -1;
+		if (str[i] == '-')
+			neg *= -1;
 		i++;
 	}
-	while (str[i] >= 48 && str[i] - '0')
+	while (str[i] >= 48 && str[i] <= 57)
 	{
-		atoi = atoi * 10 + (str[i] - '0');
+		num = num * 10 + (str[i] - 48);
 		i++;
-	}	
-	return (atoi * j);
+	}
+	return (num * neg);
 }
