@@ -1,15 +1,15 @@
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	char *pointer;
+	char	*pointer;
 
 	pointer = (char *)s;
 	while (*pointer)
 	{
 		if (*pointer == c)
 		{
-			return (pointer):
+			return (pointer);
 		}
 		pointer++;
 	}
