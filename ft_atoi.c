@@ -6,7 +6,7 @@
 /*   By: ajuan <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 10:21:19 by ajuan             #+#    #+#             */
-/*   Updated: 2021/10/19 10:37:00 by ajuan            ###   ########.fr       */
+/*   Updated: 2021/10/19 15:15:49 by ajuan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,11 @@ int	ft_atoi(const char *str)
 	}
 	return (num * neg);
 }
+
+/* #include <stdio.h>
+
+int	main(int argc, char **argv)
+{
+	(void)argc;
+	printf("%d\n", ft_atoi(argv[1]));
+} */
