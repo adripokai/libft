@@ -1,20 +1,33 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ajuan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/19 10:30:07 by ajuan             #+#    #+#             */
+/*   Updated: 2021/10/19 11:18:41 by ajuan            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-size_t	ft_strlcat(char *s1, const char *s2, size_t n)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	i;
-	size_t	j;
+	size_t		i;
+	size_t		len;
 
+	len = ft_strlen(dst) + ft_strlen(src);
+	if (size <= ft_strlen(dst))
+		return (ft_strlen(src) + size);
+	while (*dst)
+		dst++;
 	i = 0;
-	while (s1[i] != '\0' && i < n)
-		i++;
-	j = i;
-	while (s2[i - j] != '\0' && i < n - 1)
+	while ((i < size - (len - ft_strlen(src)) - 1) && src[i])
 	{
-		s1[i] = s2[i - j];
+		dst[i] = src[i];
 		i++;
 	}
-	if (j < n)
-		s1[i] = '\0';
-	return (j + ft_strlen(s2));
+	dst[i] = '\0';
+	return (len);
 }
