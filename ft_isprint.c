@@ -6,9 +6,11 @@
 /*   By: ajuan <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 10:24:40 by ajuan             #+#    #+#             */
-/*   Updated: 2021/10/19 10:24:44 by ajuan            ###   ########.fr       */
+/*   Updated: 2021/10/20 15:56:16 by ajuan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// check si le caractere passe est un charactere printable
 
 #include "libft.h"
 

@@ -6,9 +6,12 @@
 /*   By: ajuan <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 10:22:44 by ajuan             #+#    #+#             */
-/*   Updated: 2021/10/19 10:22:49 by ajuan            ###   ########.fr       */
+/*   Updated: 2021/10/20 16:04:52 by ajuan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// La mémoire dynamique est allouée par les fonctions malloc() ou calloc(). 
+// Ces fonctions renvoient des pointeurs vers la mémoire allouée.
 
 #include "libft.h"
 

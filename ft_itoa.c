@@ -6,9 +6,12 @@
 /*   By: ajuan <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 10:25:01 by ajuan             #+#    #+#             */
-/*   Updated: 2021/10/19 10:25:04 by ajuan            ###   ########.fr       */
+/*   Updated: 2021/10/20 16:05:22 by ajuan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// La fonction convertit l'entier en chaîne terminée par NULL. 
+// Il peut également convertir des nombres négatifs.
 
 #include "libft.h"
 

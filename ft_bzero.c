@@ -6,9 +6,11 @@
 /*   By: ajuan <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 10:22:15 by ajuan             #+#    #+#             */
-/*   Updated: 2021/10/19 10:22:22 by ajuan            ###   ########.fr       */
+/*   Updated: 2021/10/20 15:51:24 by ajuan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// La fonction bzero() place n octets de valeur zéro dans la zone pointée par s.
 
 #include "libft.h"
 
