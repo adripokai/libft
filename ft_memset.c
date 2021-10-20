@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// Remplit les données de n octets de la mémoire, en écrivant le type c dans cette zone.
+
 #include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)

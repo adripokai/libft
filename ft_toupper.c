@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// Convertit l'entier c donné s'il s'agit d'un code ASCII alphabétique minuscule en son équivalent majuscule.
+
 #include "libft.h"
 
 int	ft_toupper(int c)

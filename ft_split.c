@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// Alloue un tableau de chaînes toutes terminées par '\0' incluant le tableau 
+// lui-même (NULL) obtenu en divisant s en utilisant le caractère c comme délimiteur.
+
 #include "libft.h"
 
 static int	word_count(char const *s, char c)

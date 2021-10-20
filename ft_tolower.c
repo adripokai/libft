@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// Convertit l'entier c donné s'il s'agit d'un code ASCII alphabétique majuscule en son équivalent minuscule
+
 #include "libft.h"
 
 int	ft_tolower(int c)

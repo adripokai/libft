@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// Copie n octets de la mémoire de la source vers la destination.
+
 #include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
